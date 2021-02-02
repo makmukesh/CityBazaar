@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".Epin.Transaction_login_Activity"
+    android:background="@color/app_color_white">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:fontFamily="@font/roboto"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:background="@color/color_51be7b"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Transaction Login "
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorPrimary"
+        tools:ignore="Deprecated" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp">
+
+
+                <TextView android:fontFamily="@font/roboto"
+                    android:text="For first time, your transaction password is same as your login password / or provided at the joining. However, you can change them anytime. Make sure you create strong transaction password as this would be your second level of security. Transaction password will be used to access E-Pin Management."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView android:fontFamily="@font/roboto"
+                    android:text="Transaction password should not be same as login password. Also change the password frequently at least once in a week."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_green_text"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="bottom"
+                    app:passwordToggleEnabled="true"
+                    style="@style/AppTextField"
+                    android:minHeight="52dp">
+
+                    <com.google.android.material.textfield.TextInputEditText android:fontFamily="@font/roboto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:hint="Transaction Password"
+                        android:inputType="textPassword"
+                        android:id="@+id/edtxt_trans_password"
+                        android:maxLines="1"
+                        android:minHeight="40dp"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        tools:ignore="Deprecated" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button android:fontFamily="@font/roboto"
+                    android:text="Transaction Login"
+                    android:id="@+id/button_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:focusableInTouchMode="false"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_rectangle_green"
+                    android:layout_marginBottom="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

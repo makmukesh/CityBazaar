@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:fontFamily="@font/roboto"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:background="@color/color_51be7b"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Topup/Activate Members"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorPrimary"
+        tools:ignore="Deprecated" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:minHeight="52dp"
+                    android:layout_marginBottom="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText android:fontFamily="@font/roboto"
+                        android:id="@+id/edtxt_pinNumber"
+                        android:spinnerMode="dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Pin No."
+                        android:inputType="none"
+                        android:editable="false"
+                        android:maxLines="1"
+                        android:minHeight="40dp"
+                        android:singleLine="true"
+                        android:textSize="13sp"
+                        android:textAllCaps="true"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:layout_gravity="center"
+                        tools:ignore="Deprecated" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:minHeight="52dp"
+                    android:layout_marginBottom="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText android:fontFamily="@font/roboto"
+                        android:id="@+id/edtxt_scratchNumber"
+                        android:spinnerMode="dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Scratch No."
+                        android:inputType="none"
+                        android:editable="false"
+                        android:maxLines="1"
+                        android:minHeight="40dp"
+                        android:singleLine="true"
+                        android:textSize="13sp"
+                        android:textAllCaps="true"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:layout_gravity="center"
+                        tools:ignore="Deprecated,HardcodedText" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:minHeight="52dp"
+                    android:layout_marginBottom="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtxt_id_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:fontFamily="@font/roboto"
+                        android:hint="Member ID"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:minHeight="40dp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textSize="13sp"
+                        tools:ignore="Deprecated" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:minHeight="52dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtxt_memberName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:editable="false"
+                        android:fontFamily="@font/roboto"
+                        android:hint="Member Name"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:minHeight="40dp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textSize="13sp"
+                        tools:ignore="Deprecated,HardcodedText" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button android:fontFamily="@font/roboto"
+                    android:text="Confirm Activate/Topup"
+                    android:id="@+id/btn_confirm_topup"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:focusableInTouchMode="false"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/round_rectangle_green"
+                    android:layout_marginBottom="10dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="1dp"
+                        android:background="#cccccc" />
+
+                    <TextView android:fontFamily="@font/roboto"
+                        android:gravity="center"
+                        android:minHeight="45dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR"
+                        android:textAllCaps="true"
+                        android:textColor="@color/app_color_green_one"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+
+                    <View
+                        android:layout_height="1dp"
+                        android:layout_width="40dp"
+                        android:layout_margin="10dp"
+                        android:background="#cccccc" />
+                </LinearLayout>
+
+                <Button android:fontFamily="@font/roboto"
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Cancel"
+                    android:focusableInTouchMode="false"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/round_rectangle_orange"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

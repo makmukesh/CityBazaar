@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "236168746063",
+    "project_id": "city-bazaar-27a3e",
+    "storage_bucket": "city-bazaar-27a3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236168746063:android:5bf993a9be333d6324063a",
+        "android_client_info": {
+          "package_name": "com.vpipl.citybazaar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236168746063-eq1u2ms7fpi5nomhtbhjpvosvqrakl77.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vpipl.citybazaar",
+            "certificate_hash": "e34cb4e3d4a40202ebe57c8ed6b1f6ba427a7399"
+          }
+        },
+        {
+          "client_id": "236168746063-aoksr3eo165k3snp0047adlurdubioes.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPu0AnGt7_Lte2gfZvGQs_2L4h_7ngQKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236168746063-aoksr3eo165k3snp0047adlurdubioes.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

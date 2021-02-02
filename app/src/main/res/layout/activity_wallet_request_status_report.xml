@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarlayout"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="false"
+            android:nestedScrollingEnabled="false">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center"
+                    android:background="@color/color_51be7b"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Wallet Request Status Report"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    tools:ignore="Deprecated,HardcodedText" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".7"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="30dp"
+                    android:paddingEnd="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="30dp"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="From Date"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/txt_from_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_edittext_bottom_line"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/roboto"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="To Date"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/txt_to_date"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_edittext_bottom_line"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/roboto"
+                        android:padding="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btn_proceed"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bg_round_rectangle_orange_"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/roboto"
+                        android:text="Proceed"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/txt_available_wb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:gravity="start"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/HSV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <TableLayout
+                                android:id="@+id/displayLinear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:orientation="vertical"></TableLayout>
+
+                            <!--<ListView-->
+                            <!--android:id="@+id/lv"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent" />-->
+
+                            <Button
+                                android:id="@+id/btn_load_more"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_below="@+id/displayLinear"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="20dp"
+                                android:background="@drawable/bg_round_rectangle_orange_"
+                                android:focusableInTouchMode="false"
+                                android:fontFamily="@font/roboto"
+                                android:minWidth="120dp"
+                                android:text="Load More"
+                                android:textAllCaps="false"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                tools:ignore="HardcodedText" />
+
+                        </RelativeLayout>
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+ </LinearLayout>
+

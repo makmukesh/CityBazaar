@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/app_color_white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarlayout"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:src="@drawable/qr_code_pay"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        tools:ignore="MissingConstraints">
+
+        <com.iammert.library.readablebottombar.ReadableBottomBar
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="1dp"
+            app:rbb_activeItemType="text"
+            app:rbb_backgroundColor="@color/app_color_white"
+            app:rbb_indicatorColor="@color/colorPrimary"
+            app:rbb_indicatorHeight="2dp"
+            app:rbb_initialIndex="2"
+            app:rbb_tabs="@xml/tabs"
+            app:rbb_textColor="@color/black"
+            app:rbb_textSize="8dp" />
+        <!--app:rbb_activeItemType="text or icon"-->
+    </RelativeLayout>
+</RelativeLayout>

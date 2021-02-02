@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vpipl.citybazaar">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name="com.vpipl.citybazaar.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+<!--android:theme="@style/AppTheme.NoActionBar"-->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name="com.vpipl.citybazaar.Splash_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="example.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.vpipl.citybazaar.Login_New_Activity" />
+        <activity android:name="com.vpipl.citybazaar.DashBoard_Activity" />
+        <activity android:name="com.vpipl.citybazaar.WelcomeLetter_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Change_Password_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Profile_Update_Activity" />
+        <activity android:name="com.vpipl.citybazaar.KYCUploadDocument_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Sponsor_genealogy_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Sponsor_team_details_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Forget_Password_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Repurchase_BV_Details_Summary_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Repurchase_BV_Summary_Team_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Repurchase_BV_Detail" />
+        <activity android:name="com.vpipl.citybazaar.CloseActivity" />
+
+        <service android:name="com.vpipl.citybazaar.service.GetDataService" />
+
+        <activity
+            android:name="com.vpipl.citybazaar.MyOrders_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.vpipl.citybazaar.MyOrdersDetails_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.vpipl.citybazaar.Incentive_Statement_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.vpipl.citybazaar.Register_Complaint_Activity" />
+        <activity android:name="com.vpipl.citybazaar.ViewPendingQueries_Activity" />
+        <activity android:name="com.vpipl.citybazaar.ViewCompleteConversation_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Repurchase_Bill_Summary" />
+        <activity android:name="com.vpipl.citybazaar.ID_card_Activity" />
+        <activity android:name="com.vpipl.citybazaar.MyAchivers_Activity" />
+        <activity android:name="com.vpipl.citybazaar.TermsAndConditionsWebView" />
+        <activity android:name="com.vpipl.citybazaar.ViewPdf" />
+        <activity android:name="com.vpipl.citybazaar.Sponsor_genealogy_Activity_New" />
+        <activity android:name="com.vpipl.citybazaar.Downline_Team_Details_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Auto_Growth_Pool_Details_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Profile_View_New_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Daily_Payout_Report_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Direct_Sponsor_Bonus_Detail_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Downline_Team_Auto_Growth_Incentive_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Auto_Growth_Pool_Details_Report_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Register_Free_Activity" />
+        <activity android:name="com.vpipl.citybazaar.PlaceOrderActivity" />
+        <activity android:name="com.vpipl.citybazaar.PlaceOrderOnlineActivity" />
+        <activity android:name="com.vpipl.citybazaar.Wallet_Request_Amount_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Wallet_Request_Status_Report_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Wallet_Transaction_Report_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Daily_Incentive_report_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Daily_Incentive_Detailed_report_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Weekly_Incentive_report_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Weekly_Incentive_Detailed_report_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Monthly_Incentive_report_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Monthly_Incentive_Detailed_report_Activity" />
+        <activity android:name="com.vpipl.citybazaar.TP_Dummy_Payment_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Test_Login_Activity" />
+        <activity android:name="com.vpipl.citybazaar.DashBoardNew_Activity" />
+        <activity android:name="com.vpipl.citybazaar.MainActivity" />
+        <activity android:name="com.vpipl.citybazaar.Reward_Details_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Home_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Share_Sponsor_Link_Activity" />
+        <activity android:name="com.vpipl.citybazaar.PhotoGalleryActivity" />
+        <activity android:name="com.vpipl.citybazaar.PhotoGalleryDetailsActivity" />
+        <activity android:name="com.vpipl.citybazaar.PayActivity" />
+
+        <activity android:name="com.vpipl.citybazaar.Epin.Pin_details_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Epin.Pin_details_for_bill_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Epin.Pin_details_for_receive_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Epin.Pin_details_for_transfer_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Epin.Pin_Generated_issued_details_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Epin.Pin_Received_Report_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Epin.Pin_Request_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Epin.Pin_Request_Report_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Epin.Pin_transfer_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Epin.Pin_Transfer_Report_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Epin.Topup_member_Activity" />
+        <activity android:name="com.vpipl.citybazaar.Epin.Transaction_login_Activity" />
+
+        <receiver
+            android:name="com.vpipl.citybazaar.SMS.MySMSBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <!-- Firebase Notifications -->
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

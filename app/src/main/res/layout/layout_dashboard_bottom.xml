@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_color_white"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/img_dash_bottom_1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:gravity="left|center"
+                android:text="Downline Team"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/img_dash_bottom_2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Direct Members"
+                android:textColor="@color/color_919191"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/img_dash_bottom_3"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:gravity="center|right"
+                android:text="Sponsoring Team"
+                android:textColor="@color/color_919191"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/innerLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_Downline_Team_Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_rectangle_round_company_color"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:visibility="visible"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="My Downline Team Status"
+                    android:textColor="#FFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+
+                            android:text="Particulars"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+
+                            android:text="Left"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+
+                            android:text="Right"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+
+                            android:text="Total"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0.5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+
+                            android:text="Up-to-Date Joining(s)"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdts_fr_left"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdts_fr_right"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdts_fr_total"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+
+                            android:text="Up-to-Date Paid Joining(s)"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdts_sr_left"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdts_sr_right"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdts_sr_total"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+
+                            android:text="Up-to-Date BV Detail"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdts_tr_left"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdts_tr_right"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdts_tr_total"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Direct_Members_Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_rectangle_round_company_color"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:visibility="visible"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="My Direct Members Status"
+                    android:textColor="#FFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="Particulars"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:text="Left"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+
+                            android:text="Right"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+
+                            android:text="Total"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0.5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+
+                            android:text="Up-to-Date Joining(s)"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdms_fr_left"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdms_fr_right"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdms_fr_total"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+
+                            android:text="Up-to-Date Paid Joining(s)"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdms_sr_left"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdms_sr_right"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdms_sr_total"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+
+                            android:text="Up-to-Date BV Detail"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdms_tr_left"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdms_tr_right"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mdms_tr_total"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Sponsoring_Team_Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_rectangle_round_company_color"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:visibility="visible"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="My Sponsoring Team Status"
+                    android:textColor="#FFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="Particulars"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:text="Left"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+
+                            android:text="Right"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:text="Total"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0.5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+
+                            android:text="Up-to-Date Joining(s)"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mds_fr_left"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mds_fr_right"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mds_fr_total"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+
+                            android:text="Up-to-Date Paid Joining(s)"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mds_sr_left"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mds_sr_right"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mds_sr_total"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.5dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="start"
+                            android:text="Up-to-Date Activation BV Detail"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mds_tr_left"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mds_tr_right"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/bottom_mds_tr_total"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#FFF"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ael_duration="500"
+                app:ael_expanded="true"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

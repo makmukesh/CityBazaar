@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        drawable="@drawable/ic_home"
+        text="@string/home" />
+
+    <tab
+        drawable="@drawable/ic_nav_order"
+        text="@string/store" />
+
+    <tab
+        drawable="@drawable/ic_nav_repurchase"
+        text="@string/pay" />
+
+    <tab
+        drawable="@drawable/ic_share"
+        text="@string/share" />
+    <tab
+        drawable="@drawable/ic_nav_wallet"
+        text="@string/history" />
+</tabs>

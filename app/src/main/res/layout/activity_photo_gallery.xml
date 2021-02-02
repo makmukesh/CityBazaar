@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/app_color_white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarlayout"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarlayout"
+        android:layout_above="@+id/rl_bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_data_found"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Spinner
+                        android:id="@+id/spinner_selectcategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:entries="@array/spinner_selectcategory">
+
+                    </Spinner>
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/ic_arrow_drop_down_black_24dp" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:divider="@null"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_no_data_found"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAEDF2"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg_no_data_found" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        android:gravity="bottom"
+        android:id="@+id/rl_bottom"
+        android:layout_alignParentBottom="true"
+        tools:ignore="MissingConstraints">
+
+        <com.iammert.library.readablebottombar.ReadableBottomBar
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="1dp"
+            app:rbb_activeItemType="text"
+            app:rbb_backgroundColor="@color/app_color_white"
+            app:rbb_indicatorColor="@color/colorPrimary"
+            app:rbb_indicatorHeight="2dp"
+            app:rbb_initialIndex="1"
+            app:rbb_tabs="@xml/tabs"
+            app:rbb_textColor="@color/black"
+            app:rbb_textSize="8dp" />
+        <!--app:rbb_activeItemType="text or icon"-->
+    </RelativeLayout>
+
+</RelativeLayout>

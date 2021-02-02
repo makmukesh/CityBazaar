@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#545353</color>
+    <color name="colorPrimaryDark">#545353</color>
+    <color name="colorAccent">#545353</color>
+
+    <color name="color_919191">#919191</color>
+    <color name="color_186E44">#186E44</color>
+    <color name="color_yellow">#e4e4e4</color>
+    <color name="color_red">#E454</color>
+    <color name="transparent_color">#00000000</color>
+
+    <color name="orange">#545353</color>
+    <color name="color_green_logo_dark">#3A54A5</color>
+
+    <color name="colorCompanyGreen">#3A54A5</color>
+    <color name="colorCompanyOrange">#DF3037</color>
+    <color name="color__bg_orange">#EA0810</color>
+
+
+    <color name="app_color_ddd">#ddd</color>
+    <color name="app_color_green_one">#f3702a</color>
+
+    <color name="color_orange_text">#f3702a</color>
+    <color name="color_orange_profile">#F38836</color>
+    <color name="color_green_text">#00A650</color>
+
+    <color name="color_grey_dark_text">#646464</color>
+
+    <color name="background_color_text_grey">#dddddd</color>
+    <color name="color_text_grey">#626262</color>
+
+    <!--Color Related to Home-->
+    <color name="color_text_bonus_orange">#FF454545</color>
+
+    <color name="color_bg_product_images">#eeeeee</color>
+    <color name="color_border_product_images">#dddddd</color>
+
+    <color name="color_136D98">#136D98</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_51be7b">#eee</color>
+
+
+    <!--DashBoard Colors-->
+
+    <color name="app_color_white">#FFFFFF</color>
+    <color name="app_color_black">#000000</color>
+
+    <color name="app_color_gry">#EEEEEE</color>
+    <color name="app_color_red">#e70404</color>
+    <color name="app_color_cream_dark">#D6D6D6</color>
+    <color name="app_color_gray_dark">#666666</color>
+    <color name="app_color_grayicon">#666666</color>
+    <color name="color_topbar_bg_gridlist">#516451</color>
+    <color name="color_f4f4f4">#f4f4f4</color>
+
+    <color name="table_Heading_Columns">#ddd</color>
+    <color name="table_row_one">#f1f8fa</color>
+    <color name="table_row_two">#e1eff5</color>
+    <color name="text_color_hint">#FF424242</color>
+    <!-- Color for Apps -->
+    <color name="gray_light">#F7F7F7</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="slider_text_bg">#87000000</color>
+    <color name="gray_more">#C8C2C2</color>
+    <color name="color_blue">#0455F8</color>
+    <color name="color_666">#666</color>
+    <color name="color_F45622">#F45622</color>
+    <color name="gray_more_light">#338D8A8A</color>
+    <color name="color_bg_orange">#F2B14E</color>
+    <color name="color_orange">#F46720</color>
+
+
+    <color name="color_dash_blue">#4C48DA</color>
+    <color name="color_dash_orange">#F5863A</color>
+    <color name="color_dash_pink">#FF3A68</color>
+    <color name="color_dash_purple">#3E2586</color>
+
+
+</resources>
